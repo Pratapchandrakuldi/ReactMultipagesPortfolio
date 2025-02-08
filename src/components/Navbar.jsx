@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import { Sun, Moon } from "lucide-react";
+import photo_me_2 from "../../src/assets/photo_me_2.png";
 
 function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -12,7 +13,7 @@ function Navbar() {
         {/* Branding with Header Content */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
-            src="src\components\photo_me_2.jpeg"
+            src={photo_me_2}
             alt="Pratap Chandra Kuldi"
             className="me-2 rounded-circle"
             style={{ width: '45px', height: '45px', objectFit: 'cover' }}
