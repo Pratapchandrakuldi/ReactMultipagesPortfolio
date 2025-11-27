@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import photo from "../assets/photo_me_2.png";
 import { useTheme } from "../context/ThemeContext";
+<<<<<<< HEAD
+=======
+import { Sun, Moon } from "lucide-react";
+import photo_me_2 from "../../src/assets/photo_me_2.png";
+>>>>>>> 12908e3c9f1f38eb57333c480700fc4270883e68
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -23,8 +28,15 @@ export default function Navbar() {
         {/* Branding */}
         <Link to="/" className="flex items-center gap-3">
           <img
+<<<<<<< HEAD
             src={photo}
             className="w-12 h-12 rounded-full object-cover border-2 border-black"
+=======
+            src={photo_me_2}
+            alt="Pratap Chandra Kuldi"
+            className="me-2 rounded-circle"
+            style={{ width: '45px', height: '45px', objectFit: 'cover' }}
+>>>>>>> 12908e3c9f1f38eb57333c480700fc4270883e68
           />
           <div>
             <h1 className="font-bold text-lg text-black">Pratap Chandra Kuldi</h1>
@@ -87,6 +99,7 @@ export default function Navbar() {
   );
 }
 
+<<<<<<< HEAD
 
 
 
@@ -111,3 +124,6 @@ export default function Navbar() {
 
 
 
+=======
+export default Navbar;
+>>>>>>> 12908e3c9f1f38eb57333c480700fc4270883e68
