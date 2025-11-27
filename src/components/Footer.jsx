@@ -1,66 +1,69 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-primary text-white mt-5 pt-4">
-      <div className="container">
-        <div className="row g-4">
-          {/* About Section */}
-          <div className="col-md-4">
-            <h5>Pratap Chandra Kuldi</h5>
-            <p className="small">
-              Full Stack Developer passionate about building innovative solutions 
-              and continuously learning new technologies.
-            </p>
-          </div>
+    <footer className="bg-blue-700 text-white mt-10 py-6">
+      <div className="container mx-auto grid md:grid-cols-3 gap-6">
 
-          {/* Quick Links */}
-          <div className="col-md-4">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
-              <li><Link to="/" className="text-white text-decoration-none">Home</Link></li>
-              <li className="mt-2"><Link to="/projects" className="text-white text-decoration-none">Projects</Link></li>
-              <li className="mt-2"><Link to="/certifications" className="text-white text-decoration-none">Certifications</Link></li>
-              <li className="mt-2"><Link to="/contact" className="text-white text-decoration-none">Contact</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="col-md-4">
-            <h5>Connect With Me</h5>
-            <ul className="list-unstyled small">
-              <li className="mt-2">📧 pratapkuldi489@gmail.com</li>
-              <li className="mt-2">📱 +91 9348756496</li>
-              <li className="mt-2">
-                <a href="https://linkedin.com/in/pratapchandrakuldi" 
-                   className="text-white text-decoration-none"
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                  🔗 LinkedIn
-                </a>
-              </li>
-              <li className="mt-2">
-                <a href="https://github.com/Pratapchandrakuldi" 
-                   className="text-white text-decoration-none"
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                  🐱 GitHub
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div>
+          <h3 className="font-bold text-lg px-2">Pratap Chandra Kuldi</h3>
+          <p className="text-sm mt-2 px-3">
+            Full Stack Developer passionate about innovation & modern technologies.
+          </p>
         </div>
 
-        {/* Copyright */}
-        <div className="text-center py-3 mt-4 border-top">
-          <small>
-            © {new Date().getFullYear()} Pratap Chandra Kuldi. All rights reserved.
-          </small>
+        <div>
+          <h3 className="font-bold text-lg">Quick Links</h3>
+          <ul className="mt-2 space-y-2">
+            <li><a href="/" className="hover:text-yellow-300">Home</a></li>
+            <li><a href="/projects" className="hover:text-yellow-300">Projects</a></li>
+            <li><a href="/certifications" className="hover:text-yellow-300">Certifications</a></li>
+            <li><a href="/contact" className="hover:text-yellow-300">Contact</a></li>
+          </ul>
         </div>
+
+        <div>
+          <h3 className="font-bold text-lg">Connect</h3>
+          <ul className="mt-2 space-y-2 text-sm">
+            <li>📧 pratapkuldi489@gmail.com</li>
+            <li>📱 +91 9348756496</li>
+            <li>
+              <a href="https://linkedin.com/in/pratapchandrakuldi" target="_blank" className="hover:text-yellow-300">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/Pratapchandrakuldi" target="_blank" className="hover:text-yellow-300">GitHub</a>
+            </li>
+          </ul>
+        </div>
+
       </div>
+
+      <p className="text-center text-xs mt-6">
+        © {new Date().getFullYear()} Pratap Chandra Kuldi — All Rights Reserved.
+      </p>
     </footer>
   );
-};
+}
 
-export default Footer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

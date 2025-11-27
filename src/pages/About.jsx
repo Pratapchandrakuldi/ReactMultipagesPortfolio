@@ -1,96 +1,80 @@
-import React from 'react'
-import { Card, ListGroup, Container, Row, Col } from 'react-bootstrap';
+import React from "react";
 
-const About = () => {
+export default function About() {
   return (
-    <Container className="mt-5 pt-5">
-      {/* Background Section */}
-      <Row className="mb-5">
-        <Col lg={12}>
-          <h2 className="display-5 mb-4">Background</h2>
-          <p className="lead">
-            I am Pratap Chandra Kuldi, a MERN Stack Developer and Blockchain Enthusiast, 
-            with a completed MCA from Centurion University of Technology and Management, Bhubaneswar.
+    <div className="relative pt-28 pb-16 bg-gradient-to-br from-blue-500 to-indigo-700 dark:from-gray-800 dark:to-gray-900">
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-black/20 dark:bg-black/40"></div>
+
+      <div className="relative container mx-auto px-4">
+        {/* Heading */}
+        <div className="text-center text-white mb-12">
+          <h1 className="text-4xl font-bold mb-3">About Me</h1>
+          <p className="text-lg text-gray-200">
+            Dedicated Full-Stack Java & MERN Developer, <span className="text-1xl font-semibold mb-4 text-green-100 dark:text-blue-100">MCA Degree</span>, with hands-on experience in Cloud, Web3, and modern web technologies.
           </p>
-        </Col>
-      </Row>
+        </div>
 
-      {/* Education Section */}
-      <Row className="mb-5">
-        <Col lg={12}>
-          <h3 className="mb-4">Education</h3>
-          <ListGroup variant="flush">
-            <ListGroup.Item>
-              <h5>Bachelor of Computer Applications (BCA)</h5>
-              <p className="mb-0">
-                Completed from a reputed institution with strong fundamentals in computer science
-              </p>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <h5>Master of Computer Applications (MCA)</h5>
-              <p className="mb-0">
-                Currently pursuing at Centurion University, enhancing technical expertise
-                and practical skills (Expected Graduation: 2025)
-              </p>
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
+        {/* Summary Section */}
+        <div className="mb-12 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl backdrop-blur-md border border-white/20">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-600 dark:text-blue-400">
+            Professional Summary
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 space-y-2">
+            I have completed multiple internships and projects, including AWS cloud deployments, Web3 smart-contract integration, and full-stack development, delivering scalable, efficient, and user-friendly applications.
+          </p>
+        </div>
 
-      {/* Skills Section */}
-      <Row className="mb-5">
-        <Col lg={12}>
-          <h3 className="mb-4">Technical Skills</h3>
-          <Row>
-            <Col md={6} className="mb-4">
-              <Card>
-                <Card.Body>
-                  <Card.Title>Full Stack Development</Card.Title>
-                  <ListGroup variant="flush">
-                    <ListGroup.Item>HTML/CSS/JavaScript</ListGroup.Item>
-                    <ListGroup.Item>ReactJS & jQuery</ListGroup.Item>
-                    <ListGroup.Item>PHP & .NET</ListGroup.Item>
-                    <ListGroup.Item>Python, Java, C++</ListGroup.Item>
-                  </ListGroup>
-                </Card.Body>
-              </Card>
-            </Col>
+        {/* Key Skills & Experience */}
+        <div className="mb-12 grid md:grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg backdrop-blur-md border border-white/20">
+            <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Full-Stack Development</h3>
+            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+              <li>Java, JavaScript, PHP, React.js, Node.js, Express.js</li>
+              <li>MongoDB, MySQL — full-lifecycle development</li>
+              <li>Responsive web applications with clean, modular code</li>
+            </ul>
+          </div>
 
-            <Col md={6} className="mb-4">
-              <Card>
-                <Card.Body>
-                  <Card.Title>DevOps & Databases</Card.Title>
-                  <ListGroup variant="flush">
-                    <ListGroup.Item>Docker & AWS</ListGroup.Item>
-                    <ListGroup.Item>CI/CD Pipelines</ListGroup.Item>
-                    <ListGroup.Item>MySQL & PostgreSQL</ListGroup.Item>
-                    <ListGroup.Item>MongoDB</ListGroup.Item>
-                  </ListGroup>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg backdrop-blur-md border border-white/20">
+            <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-3">Cloud & Blockchain</h3>
+            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
+              <li>AWS Services: EC2, S3, RDS, VPC, Load Balancer</li>
+              <li>Blockchain/Web3: Smart-contracts, dApps, decentralized solutions</li>
+              <li>Projects: Real-estate deployment, attendance systems, chatbots</li>
+            </ul>
+          </div>
+        </div>
 
-      {/* Career Goals Section */}
-      <Row>
-        <Col lg={12}>
-          <Card className="bg-secondary text-white">
-            <Card.Body>
-              <h3 className="mb-3">Career Goals</h3>
-              <p className="lead mb-0">
-                My goal is to become a proficient Full Stack Developer and DevOps Engineer,
-                continuously learning and adapting to emerging technologies to build
-                scalable and efficient solutions.
-              </p>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-    
+        {/* Education Section */}
+        <div className="mb-12 grid md:grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg backdrop-blur-md border border-white/20">
+            <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Bachelor of Computer Applications (BCA)</h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              Completed with strong fundamentals in computer science.
+            </p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg backdrop-blur-md border border-white/20">
+            <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">Master of Computer Applications (MCA)</h3>
+            <p className="text-gray-700 dark:text-gray-300">
+              Completed from Centurion University of Technology and Management, Bhubaneswar, enhancing technical expertise and practical skills.
+            </p>
+          </div>
+        </div>
+
+        {/* Career Goals Section */}
+        <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl backdrop-blur-md border border-white/20">
+          <h2 className="text-2xl font-semibold mb-3 text-blue-600 dark:text-blue-400">
+            Career Goals
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 space-y-2">
+            <strong>Short-term:</strong> Secure a role to apply and enhance my skills. <br />
+            <strong>Long-term:</strong> Join a reputed organization to leverage my expertise and gain growth opportunities in full-stack and blockchain technologies.
+          </p>
+        </div>
+      </div>
+    </div>
   );
-};
+}
 
-export default About;
