@@ -1,5 +1,5 @@
 import React from "react";
-import resumePDF from "../assets/resume.pdf"; // <-- Add your resume in /src/assets/
+import resumePDF from "../assets/Resume.pdf"; // <-- Add your resume in /src/assets/
 
 export default function Resume() {
   return (
