@@ -1,12 +1,12 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-700 text-white mt-10 py-6">
+    <footer className="bg-blue-700 text-white mt-10 py-6 p-4">
       <div className="container mx-auto grid md:grid-cols-3 gap-6">
 
         <div>
-          <h3 className="font-bold text-lg px-2">Pratap Chandra Kuldi</h3>
-          <p className="text-sm mt-2 px-3">
+          <h3 className="font-bold text-lg">Pratap Chandra Kuldi</h3>
+          <p className="text-sm mt-2">
             Full Stack Developer passionate about innovation & modern technologies.
           </p>
         </div>

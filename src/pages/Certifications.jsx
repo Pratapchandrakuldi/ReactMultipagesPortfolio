@@ -44,6 +44,34 @@ const Certifications = () => {
       year: "2025",
       link: "https://drive.google.com/file/d/1VMrS8UdVg_Zyvh07CDzJPJzmjcEzndh7/view?usp=sharing"
     },
+    {
+      title: "Blockchain",
+      issuer: "Digital Skills In Odisha",
+      description: "Front-end and back-end development.",
+      year: "2025",
+      link: "https://drive.google.com/file/d/1nG_SZrgYD6pGSMlZqAPhQpSAWr5SVHyw/view?usp=sharing"
+    },
+    {
+      title: "Internship for advanced digital skills",
+      issuer: "CRCIDF",
+      description: "Front-end development.",
+      year: "2025",
+      link: "https://drive.google.com/file/d/1Cs1M7lVvAzDbYouNRUGgbhUfFeJlkgg4/view?usp=sharing"
+    },
+     {
+      title: "Certificate for Internship",
+      issuer: "DSDE, Intense Technologies Limt, CRCIDF",
+      description: "Web3 Technologies & Blockchain.",
+      year: "2025",
+      link: "https://drive.google.com/file/d/1C92nUO1zfKBVV1aSWkk7hDYZg5sYgLhM/view?usp=sharing"
+    },
+     {
+      title: "Rest API with Node JS",
+      issuer: "Udemy",
+      description: "Build a backend Rest API with Node Js from Scratch.",
+      year: "2025",
+      link: "https://drive.google.com/file/d/1865kPzQ7GrifEq14IfW5FoCy4I4KG_02/view?usp=sharing"
+    },
   ];
 
   return (

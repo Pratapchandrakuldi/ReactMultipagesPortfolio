@@ -29,17 +29,18 @@ export default function Navbar() {
           <div>
             <h1 className="font-bold text-lg text-black">Pratap Chandra Kuldi</h1>
             <p className="text-xs text-black hidden sm:block">
-              MERN | C | C++ | Java | Python | PHP | MySQL | MongoDB
+             Full Stack Java Developer | AWS Cloud & Web3 Intern | MERN & PHP Developer
             </p>
           </div>
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-6 font-medium">
+        <div className="hidden md:flex gap-6 font-medium px-2 ">
           <Link className="text-black hover:text-yellow-600" to="/">Home</Link>
           <Link className="text-black hover:text-yellow-600" to="/about">About</Link>
           <Link className="text-black hover:text-yellow-600" to="/projects">Projects</Link>
           <Link className="text-black hover:text-yellow-600" to="/certifications">Certifications</Link>
+          <Link className="text-black hover:text-yellow-600" to="/resume">Resume</Link>
           <Link className="text-black hover:text-yellow-600" to="/contact">Contact</Link>
         </div>
 
@@ -80,6 +81,7 @@ export default function Navbar() {
           <Link className="block text-black hover:text-blue-600" to="/about" onClick={() => setMenuOpen(false)}>About</Link>
           <Link className="block text-black hover:text-blue-600" to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
           <Link className="block text-black hover:text-blue-600" to="/certifications" onClick={() => setMenuOpen(false)}>Certifications</Link>
+          <Link className="block text-black hover:text-blue-600" to="/resume" onClick={() => setMenuOpen(false)}>Resume</Link>
           <Link className="block text-black hover:text-blue-600" to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       )}
