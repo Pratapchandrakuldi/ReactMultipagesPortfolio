@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { FaFileAlt } from "react-icons/fa";
+
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,7 +56,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  linkedin.com/in/pratapchandrakuldi
+                  linkedin.com
                 </a>
               </div>
               <div>
@@ -63,9 +67,25 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  github.com/Pratapchandrakuldi
+                  github.com
                 </a>
               </div>
+              <div>
+                <h3 className="font-medium flex items-center gap-2">
+                 <FaFileAlt className="text-blue-600 dark:text-blue-400 w-5 h-5" />
+                  Digital Resume
+                </h3>
+
+                <a
+                  href="https://bold.pro/my/pratapchandrakuldi-251129202712"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  bold.pro
+                </a>
+              </div>
+
             </div>
           </div>
 
